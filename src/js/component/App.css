@@ -1,24 +1,54 @@
+
+
+img {
+  width: 300px; 
+  position: absolute; 
+  bottom: 30px; 
+  left: 10px; 
+}
 .todo-item {
-    min-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0.5rem;
-  }
-  
-  .todo-item button {
-    margin-left: auto;
-  }
-  
-  input:checked ~ span.todo-text {
-    opacity: 0.5;
-    font-weight: 300;
-    font-style: italic;
-    text-decoration: line-through;
-  }
-  
-  span.todo-text {
-    transition: opacity 0.5s ease-in-out;
-  }
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem;
+  padding: 1rem; 
+  border: 2px solid #000; 
+  background-color: #d3d3d3; 
+  font-family: 'Press Start 2P', cursive; 
+  border-radius: 10px;
+}
+
+.todo-item button {
+  margin-left: auto;
+  background-color: #ff0000;
+  color: #fff; 
+  border: none;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input:checked ~ span.todo-text {
+  opacity: 0.5;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+span.todo-text {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.todo-item:hover {
+  background-color: cyan; 
+  cursor: pointer;
+}
+
+.form-control {
+  border-width: 3px; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
